@@ -1,0 +1,78 @@
+@import './variables';
+@import './init';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 374px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 100px -40px #000;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: -48px;
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      &__img {
+        border-radius: 50%;
+        border: 5px solid #fff;
+      }
+      .wrapper {
+        display: flex;
+        margin-top: 2.5rem;
+        .profile__name {
+          font-size: 1.8rem;
+          margin-right: 1rem;
+        }
+        .profile__age {
+          font-size: 1.8rem;
+          color: $dark-grayish-blue;
+        }
+      }
+
+      &__city {
+        margin: 1rem 0 2.5rem 0;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $dark-grayish-blue;
+      }
+
+      border-bottom: 1px solid #ddd;
+    }
+    .stats-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex: 1;
+      .stat-element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__number {
+          font-size: 1.8rem;
+          font-weight: 700;
+        }
+
+        &__type {
+          font-size: 1rem;
+          margin-top: 0.5rem;
+          color: $dark-gray;
+          letter-spacing: 1px;
+          font-weight: 400;
+        }
+      }
+    }
+
+  }
+}
+

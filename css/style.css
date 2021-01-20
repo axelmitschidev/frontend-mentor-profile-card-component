@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Kumbh Sans', sans-serif; }
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  background: url(../images/bg-pattern-top.svg) top 200% left -70% no-repeat, url(../images/bg-pattern-bottom.svg) bottom 250% right -50% no-repeat, #19a2ae;
+  color: #2d3248; }
+
+@media (max-width: 800px) {
+  body {
+    background: url(../images/bg-pattern-top.svg) top -600px left -750px no-repeat, url(../images/bg-pattern-bottom.svg) bottom -550px right -750px no-repeat, #19a2ae; } }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 374px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 100px -40px #000; }
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: -48px; }
+    .card__content .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      border-bottom: 1px solid #ddd; }
+      .card__content .profile__img {
+        border-radius: 50%;
+        border: 5px solid #fff; }
+      .card__content .profile .wrapper {
+        display: flex;
+        margin-top: 2.5rem; }
+        .card__content .profile .wrapper .profile__name {
+          font-size: 1.8rem;
+          margin-right: 1rem; }
+        .card__content .profile .wrapper .profile__age {
+          font-size: 1.8rem;
+          color: #6a6f81; }
+      .card__content .profile__city {
+        margin: 1rem 0 2.5rem 0;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #6a6f81; }
+    .card__content .stats-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex: 1; }
+      .card__content .stats-list .stat-element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .card__content .stats-list .stat-element__number {
+          font-size: 1.8rem;
+          font-weight: 700; }
+        .card__content .stats-list .stat-element__type {
+          font-size: 1rem;
+          margin-top: 0.5rem;
+          color: #969696;
+          letter-spacing: 1px;
+          font-weight: 400; }
